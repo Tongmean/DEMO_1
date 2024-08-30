@@ -6,7 +6,7 @@ const getBoms = async (req,res) =>{
         if(err){
             console.log(err);
         }else{
-            res.status(200).send(result);
+            res.status(200).json(result);
         }
     });
 }
